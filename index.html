@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Hiking</title>
+
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap" rel="stylesheet">
+
+<style>
+    /* CSS Reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/pexels-taryn-elliott-4858581.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* height: 2000px; */
+        font-family: 'Baloo Bhaijaan 2', cursive;
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 0px;
+        margin: 10px;
+    }
+
+    .left img {
+        width: 60px;
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        /* filter: invert(); */
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 0px;
+        font-size: 12px;
+    }
+
+    .mid {
+        /* border: 2px solid purple; */
+        display: block;
+        width: 40%;
+        margin: 10px auto;
+    }
+
+    .right {
+        display: inline20block;
+        position: absolute;
+        right: 34px;
+        top: 0px;
+        /* border: 2px solid greenyellow; */
+        margin: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: solid;
+        color: mediumvioletred;
+
+    }
+
+    .btn {
+        margin: 0px;
+        background-color: transparent;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+
+    }
+
+    .btn:hover {
+        background-color: black;
+    }
+
+    .container {
+        border: 3px solid gray;
+        color: black;
+        margin: 18px 24px;
+        padding: 16px 24px;
+        cursor: pointer;
+        width: 45%;
+        display: block;
+        border-radius: 15px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 6px 20px;
+        margin: 10px auto;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .container button {
+        display: block;
+        padding: 7px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .container button:hover{
+        background-color: black;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/favpng_logo-vector-graphics-graphic-design.png" alt="">
+            <div>Mountain Hiking</div>
+        </div>
+        <!-- Mid Box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Trekking Points</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right Box for Buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Team for Mountain Hiking</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile Number">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
